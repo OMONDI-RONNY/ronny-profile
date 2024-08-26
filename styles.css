@@ -252,3 +252,121 @@
 .about-me p + p {
     margin-top: 10px;
 }
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .header {
+        height: auto; /* Allow header height to adjust */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .header h1 {
+        font-size: 28px; /* Reduce font size */
+    }
+
+    .social-icon img {
+        width: 30px; /* Reduce icon size */
+        height: 30px;
+    }
+
+    .content {
+        flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    }
+
+    .cards {
+        width: 48%; /* Adjust card width */
+        margin: 1%;
+        float: none; /* Disable float for better stacking */
+    }
+
+    .profile-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    .profile-container img {
+        width: 80%; /* Reduce image size */
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .projects, .sub-cards, .education {
+        flex-direction: column; /* Stack items */
+    }
+
+    .timeline {
+        max-width: 100%; /* Allow full width */
+    }
+
+    .timeline-item {
+        padding-left: 40px; /* Adjust padding */
+    }
+
+    .timeline-item .circle {
+        width: 30px;
+        height: 30px;
+        font-size: 12px; /* Reduce circle size */
+    }
+
+    .modal-content {
+        width: 90%; /* Adjust modal width */
+    }
+
+    .certificate-link {
+        font-size: 14px; /* Adjust font size */
+        padding: 8px 12px;
+    }
+
+    .profile-video {
+        max-width: 90%;
+    }
+
+    .about-me {
+        font-size: 16px; /* Adjust font size */
+    }
+}
+
+/* Responsive Design for Mobile Phones */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 24px; /* Further reduce font size */
+    }
+
+    .social-icon img {
+        width: 25px; /* Reduce icon size */
+        height: 25px;
+    }
+
+    .cards {
+        width: 100%; /* Full width on mobile */
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .profile-container img {
+        width: 90%; /* Reduce image size further */
+    }
+
+    .details {
+        margin-left: 0; /* Center-align details */
+    }
+
+    .timeline-item .circle {
+        width: 25px;
+        height: 25px;
+        font-size: 10px; /* Further reduce circle size */
+    }
+
+    .certificate-link {
+        font-size: 12px; /* Adjust font size */
+        padding: 6px 10px;
+    }
+
+    .profile-video {
+        max-width: 100%; /* Full width video */
+    }
+
+    .about-me {
+        font-size: 14px; /* Adjust font size */
+        padding: 10px;
+    }
+}
