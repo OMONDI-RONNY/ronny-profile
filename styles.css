@@ -326,6 +326,93 @@
     }
 }
 
+/* Apply box-sizing to include padding and border in the total width */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .header {
+        height: auto; /* Allow header height to adjust */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .header h1 {
+        font-size: 28px; /* Reduce font size */
+    }
+
+    .social-icon img {
+        width: 30px; /* Reduce icon size */
+        height: 30px;
+    }
+
+    .content {
+        flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+        width: 100%; /* Full width for content */
+    }
+
+    .cards {
+        width: 100%; /* Full width for cards */
+        margin: 10px 0; /* Adjust margin for better spacing */
+        float: none; /* Remove float for better stacking */
+    }
+
+    .profile-container {
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width for profile container */
+        text-align: center;
+    }
+
+    .profile-container img {
+        width: 80%; /* Reduce image size */
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .projects, 
+    .sub-cards, 
+    .education {
+        flex-direction: column; /* Stack items */
+        width: 100%; /* Full width for these sections */
+    }
+
+    .timeline {
+        max-width: 100%; /* Allow full width */
+    }
+
+    .timeline-item {
+        padding-left: 40px; /* Adjust padding */
+    }
+
+    .timeline-item .circle {
+        width: 30px;
+        height: 30px;
+        font-size: 12px; /* Reduce circle size */
+    }
+
+    .modal-content {
+        width: 90%; /* Adjust modal width */
+    }
+
+    .certificate-link {
+        font-size: 14px; /* Adjust font size */
+        padding: 8px 12px;
+    }
+
+    .profile-video {
+        max-width: 90%;
+    }
+
+    .about-me {
+        font-size: 16px; /* Adjust font size */
+        padding: 10px;
+        width: 100%; /* Full width for about-me */
+    }
+}
+
 /* Responsive Design for Mobile Phones */
 @media (max-width: 480px) {
     .header h1 {
@@ -338,8 +425,13 @@
     }
 
     .cards {
-        width: 100%; /* Full width on mobile */
+        width: 100%; /* Full width for cards */
         margin: 10px 0; /* Adjust margin */
+        float: none; /* Remove float for better stacking */
+    }
+
+    .profile-container {
+        width: 100%; /* Full width for profile container */
     }
 
     .profile-container img {
@@ -368,5 +460,6 @@
     .about-me {
         font-size: 14px; /* Adjust font size */
         padding: 10px;
+        width: 100%; /* Full width for about-me */
     }
 }
